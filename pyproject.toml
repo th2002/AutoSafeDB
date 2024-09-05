@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "autosafedb"
+version = "0.1.0"
+description = "AutoSafeDB - Automatic Backup Management Tool"
+authors = ["trunghieudev <dinhletrunghieu0207@gmail.com>"]
+readme = "README.md"
+packages = [{include = "autosafedb", from = "src"}]
+
+[tool.poetry.scripts]
+start = "autosafedb.run:start"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.113.0"
+uvicorn = "^0.30.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
